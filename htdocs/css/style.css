@@ -1,0 +1,140 @@
+/*
+
+Copyright © 2007 Ben Clarke <ben.t.clarke@gmail.com>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+*/
+
+body {
+	margin: 0px;
+	font-size: 0.8em;
+	color: #414141;
+}
+
+h1 {
+	padding: 15px;
+	margin-top: 0px;
+	background: #AF4141;
+	color: #FFFFFF;
+	height: 40px;
+}
+
+p {
+	margin-left: 2.5em;
+	padding: 15px;
+}
+
+div#files {
+	position: absolute;
+	left: 0px;
+	top: 70px;
+	bottom: 0px;
+	width: 25em;
+	background: #FFFFFF;
+}
+
+div#files.closed {
+	width: 2em;
+}
+
+div#files div#ft {
+	position: relative;
+	top: 0px;
+	float: right;
+	width: 25px;
+	height: 25px;
+	background-image: url(/images/contract.png);
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+div#fileContent {
+	position: relative;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	height: 100%;
+	overflow: auto;
+	border-right: 2px solid #AF4141;
+}
+
+div#files.closed div#ft {
+	background-image: url(/images/expand.png);
+}
+
+div.treeNode,div.treeNodeSel {
+	margin: 0px;
+	margin-left: 16px;
+	background-color: #FFFFFF;
+	padding: 0px;
+	line-height: 10px;
+}
+
+div.treeNode span {
+	margin-left: 2px;
+	padding: 2px;
+	cursor: pointer;
+	background: #FFFFFF;
+	position: relative;
+	top: -5px;
+}
+
+div.treeNode span:hover {
+	text-decoration: underline;
+}
+
+div.treeNodeSel span {
+	margin-left: 2px;
+	padding: 2px;
+	cursor: pointer;
+	background: #AF4141;
+	color: #FFFFFF;
+	position: relative;
+	top: -5px;
+}
+
+div.treeNodeSel div.treeNode span {	
+	cursor: pointer;
+	background: #FFDFCF;
+	color: #414141;
+}
+
+div#content {
+	position: absolute;
+	left: 25em;
+	top: 70px;
+	right: 0px;
+	bottom: 0px;
+}
+
+div#content.closed {
+	left: 2em;
+}
+
+div.progressbar {
+	height: 25px;
+	width: 400px;
+	border: 1px solid black;
+}
+div.progress {
+	height: 100%;
+	width: 1px;
+	background: #AF4141;
+}
